@@ -62,6 +62,8 @@ h3 {
 }
 
 
+
+
 /*Styling for anchor elements*/
 
 a {
@@ -119,6 +121,7 @@ button:hover, button:focus, .button1:hover, .button1:focus {
   width: 30%;
   min-width: 360px;
   max-width: 1200px;
+  padding-top: 100px;
   margin: 0 auto;
 }
 
@@ -321,7 +324,7 @@ div.pullrightleft a:active {
 
 /*About*/
 
-.about {
+.berlin-illustration, .about {
   max-width: 700px;
   margin: auto;
   text-align: center;
@@ -336,6 +339,22 @@ div.pullrightleft a:active {
   text-align: center;
 }
 
+.cv-download-button-description {
+  font-size: 14px;
+}
+
+.about-language {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+
+.about-programming {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
 
 
 
@@ -388,16 +407,4 @@ div.pullrightleft a:active {
 
 
 
-/*About page styling*/
-.about-language {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-}
 
-
-.about-programming {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-}
