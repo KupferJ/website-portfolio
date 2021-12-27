@@ -7,6 +7,11 @@ Secondary Color (Orange): #e0b354;
 */
 
 
+/*ALT Background
+background: rgb(174,206,241);
+background: radial-gradient(circle, rgba(174,206,241,1) 0%, rgba(217,177,238,1) 100%);
+*/
+
 /*Basic Styling*/
 
 :root {
@@ -16,10 +21,10 @@ Secondary Color (Orange): #e0b354;
   --link-visited: #05676e;
   --secondary-color: #d6bd2d;
   --dark-grey: #2b2b2b;
-  --header-color: #757474;
+  --header-color: #303030;
   --tertiary-color: lightgrey;
-  --header-hover-color: #6d0d4d;
-  --header-active-color: #a227ad;
+  --header-hover-color: #aa197a;
+  --header-active-color: #cb2ada;
   --font-weight-heavy: 700;
   --font-weight-regular: 400;
   --primary-font: 'Aleo Cardo', sans-serif;
@@ -29,11 +34,18 @@ Secondary Color (Orange): #e0b354;
   --font-size-regular: 16px;
 }
 
+:root{
+  scrollbar-color: rgb(70, 69, 70) var(--tertiary-color)  !important;
+  scrollbar-width: auto !important;
+}
+
 body {
   margin: auto;
   min-height: 400px;
   margin-bottom: 100px;
-  background-color: var(--styling-light);
+  background-image:url(../img/background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: var(--primary-font);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-regular);
@@ -199,7 +211,7 @@ div.pullrightleft a:before, div.pullrightleft a:after {
   width: 0%;
   height: 2px;
   content: '';
-  background: var(--styling-dark);
+  background: var(--styling-light);
   transition: all 0.2s;
 }
 div.pullrightleft a:before {
@@ -216,6 +228,10 @@ div.pullrightleft a:hover:before, div.pullrightleft a:hover:after {
   width: 100%;
 }
 
+div.pullrightleft a {
+  color: var(--tertiary-color);
+}
+
 div.pullrightleft a:hover {
   color: var(--header-hover-color);
 }
@@ -228,9 +244,10 @@ div.pullrightleft a:active {
   text-decoration: underline;
 }
 
+
 /*Page Footer*/
 
-.page-footer {
+.page-footer, .footer-attribution {
   clear: both;
   display: flex;
   flex-direction: column;
@@ -241,6 +258,14 @@ div.pullrightleft a:active {
   background-color: var(--tertiary-color);
   line-height: 0.1;
   padding-bottom: 15px;
+}
+
+.footer-attribution {
+  text-align: left;
+  color: var(--styling-dark);
+  font-size: 9px;
+  text-decoration: none;
+  padding-bottom: 7px;
 }
 
 .footer-img {
@@ -308,6 +333,10 @@ div.pullrightleft a:active {
   h1 {
     font-size: 22px;
   }
+}
+
+@keyframes backInUp {
+
 }
 
 /*Contact Form*/
@@ -404,6 +433,33 @@ div.pullrightleft a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+
+
+
+
+.snowflake {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+
+@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@keyframes snowflakes-shake{0%{transform:translateX(0px);transform:translateX(0px)}50%{transform:translateX(80px);transform:translateX(80px)}100%{transform:translateX(0px);transform:translateX(0px)}}
+@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}
+.snowflake{position:fixed;top:-10%;z-index:9999;user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}
+.snowflake:nth-of-type(0){left:1%;animation-delay:0s,0s;animation-delay:0s,0s}
+.snowflake:nth-of-type(1){left:10%;animation-delay:1s,1s;animation-delay:1s,1s}
+.snowflake:nth-of-type(2){left:20%;animation-delay:6s,.5s;animation-delay:6s,.5s}
+.snowflake:nth-of-type(3){left:30%;animation-delay:4s,2s;animation-delay:4s,2s}
+.snowflake:nth-of-type(4){left:40%;animation-delay:2s,2s;animation-delay:2s,2s}
+.snowflake:nth-of-type(5){left:50%;animation-delay:8s,3s;animation-delay:8s,3s}
+.snowflake:nth-of-type(6){left:60%;animation-delay:6s,2s;animation-delay:6s,2s}
+.snowflake:nth-of-type(7){left:70%;animation-delay:2.5s,1s;animation-delay:2.5s,1s}
+.snowflake:nth-of-type(8){left:80%;animation-delay:1s,0s;animation-delay:1s,0s}
+.snowflake:nth-of-type(9){left:90%;animation-delay:3s,1.5s;animation-delay:3s,1.5s}
 
 
 
