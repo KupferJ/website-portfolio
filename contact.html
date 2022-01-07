@@ -7,8 +7,8 @@
   <title>Jorge Kupfer - Portfolio</title>
   <link rel="shortcut icon" href="img/Cat-Fav.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aleo&family=Cardo&display=swap">
-  <link rel="stylesheet" type="text.css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 
@@ -23,14 +23,11 @@
   </div>
 </header>
 
-  
 <main class="contact-main">
   <h1>Contact</h1>
+  <p>For further information or job consultation, please write me an email or use the contact form on this page.</p>
     <div>
-      Tel <a href="tel:+4912345678901">+49 1234 5678 901</a><br>
-      Skype <a href="skype:theacidtoxic">theacidtoxic </a><br>
-      Mail <a href="mailto:jorgekupfer@gmx.de">jorgekupfer@gmx.de</a><br><br>
-      <a href="mailto:jorgekupfer@gmx.de">Contact me</a>
+      Email <a href="mailto:jorgekupfer@gmx.de">jorgekupfer@gmx.de</a><br><br>
     </div><br><br>
 </main>
 
@@ -38,7 +35,7 @@
     <h2>Contact Form</h2>
     <form action="" method="post">
       <label class="standart-label" for="contact-name">Name:</label>
-      <input type="email" id="contact-name" placeholder="Enter your name" required><br><br>
+      <input type="text" id="contact-name" placeholder="Enter your name" required><br><br>
 
       <label class="standart-label" for="contact-email">E-mail:</label>
       <input type="email" id="contact-email" placeholder="Enter your email" required><br><br>
@@ -51,9 +48,20 @@
 
 
 <footer class="page-footer">
-    <a href="www.freepik.com" class="footer-attribution">Background Image designed by Freepik</a>
-    <div>  
-      <p>Find me on</p><br>
+    <a href="https://www.freepik.com" target="_blank" class="footer-attribution">Background Image designed by Freepik</a>
+    <div>
+        <nav class="navigation-drop">
+          <ul>
+            <li><a href="#" aria-haspopup="true">Language &#8657;</a>
+              <ul class="dropdown" aria-label="submenu">
+                <li><a href="index.html">English 🇬🇧</a></li>
+                <li><a href="jap/index.html">日本語 🇯🇵</a></li>
+                <li><a href="deu/index.html">Deutsch 🇩🇪</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>  
+      <p class="footer-findme">Find me on</p><br>
       <a href="https://www.facebook.com/profile.php?id=100013842121897" target="_blank">
         <img class="footer-img" src="img/facebook-icon.svg" alt="Facebook">
       </a>
@@ -66,19 +74,6 @@
     </div>  
 </footer>
 
-<script src="js/tota11y.min.js"></script>
-<div class="snowflakes" aria-hidden="true">
-  <div class="snowflake">❅</div>
-  <div class="snowflake"> ❅</div>
-  <div class="snowflake">❆</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake"> ❅</div>
-  <div class="snowflake"> ❆</div>
-  <div class="snowflake">❄</div>
-  <div class="snowflake"> ❅</div>
-  <div class="snowflake">❆</div>
-  <div class="snowflake">❄</div>
-</div>
 </body>
 
 </html>
