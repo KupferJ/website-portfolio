@@ -276,7 +276,7 @@ div.pullrightleft a:active {
 
 /*Grid for About page*/
 
-@supports (display:grid) {
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -303,7 +303,7 @@ div.pullrightleft a:active {
   grid-column: 3 / 3;
   grid-row: 1 / 3;
 }
-}
+
 
 
 @media all and (max-width:500px) {
