@@ -2,6 +2,7 @@
 
 /*Basic Styling*/
 
+
 :root {
   scrollbar-color: rgb(70, 69, 70) lightgrey  !important;
   scrollbar-width: auto !important;
@@ -294,41 +295,52 @@ div.pullrightleft a:active {
   }
 }
 
-/*Grid Fallback*/
-
-.project-list__item {
-  display: inline-block;
-  width: 33%;
-}
 
 
 
-/*Grid*/
+/*Grid for About page*/
 
 @supports (display:grid) {
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
-
-  .grid__item {
-    background-color: lightgrey;
-    width: auto;
-    min-height: auto;
-    margin: 0;
-  }
-
-  .grid__item:last-child {
-    -ms-grid-column: 3;
-    grid-column: 3 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-  }
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
+
+.grid__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightgrey;
+  border: solid grey 1px;
+}
+
+.grid__item h2 {
+  text-align: center;
+}
+
+.grid__item a {
+  color: #357b70;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.grid__item:last-child {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+}
+
 
 @media all and (max-width:500px) {
   .grid {
@@ -363,30 +375,19 @@ div.pullrightleft a:active {
   }
 }
 
-@-webkit-keyframes backInUp {
 
+/*Grid Fallback*/
+
+.project-list__item {
+  display: inline-block;
+  width: 33%;
 }
-
-@keyframes backInUp {
-
-}
-
-
 
 /*About*/
 
-.berlin-illustration, .about {
+.about {
   max-width: 700px;
   margin: auto;
-  text-align: center;
-}
-
-.about-list {
-  list-style-type: none;
-}
-
-.about-list li {
-  margin-left: -30px;
   text-align: center;
 }
 
@@ -394,22 +395,41 @@ div.pullrightleft a:active {
   font-size: 14px;
 }
 
-.about-language {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  text-align: center;
+.about-programming, .about-language {
+  position: relative;
+  margin-top: 10px;
 }
 
-
-.about-programming {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+table {
+  border: 1px solid black;
+  padding: 3px;
   text-align: center;
+  background-color: white;
+  border-collapse: collapse;
 }
+
+th {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 
 
 

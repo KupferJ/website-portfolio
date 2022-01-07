@@ -2,6 +2,7 @@
 
 /*Basic Styling*/
 
+
 :root {
   --styling-dark: black;
   --styling-light: white;
@@ -270,36 +271,40 @@ div.pullrightleft a:active {
   }
 }
 
-/*Grid Fallback*/
-
-.project-list__item {
-  display: inline-block;
-  width: 33%;
-}
 
 
 
-/*Grid*/
+/*Grid for About page*/
 
 @supports (display:grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
-
-  .grid__item {
-    background-color: var(--tertiary-color);
-    width: auto;
-    min-height: auto;
-    margin: 0;
-  }
-
-  .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
+
+.grid__item {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: var(--tertiary-color);
+  border: solid grey 1px;
+}
+
+.grid__item h2 {
+  text-align: center;
+}
+
+.grid__item a {
+  color: var(--primary-color);
+  align-self: center;
+}
+
+.grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+}
+
 
 @media all and (max-width:500px) {
   .grid {
@@ -332,26 +337,19 @@ div.pullrightleft a:active {
   }
 }
 
-@keyframes backInUp {
 
+/*Grid Fallback*/
+
+.project-list__item {
+  display: inline-block;
+  width: 33%;
 }
-
-
 
 /*About*/
 
-.berlin-illustration, .about {
+.about {
   max-width: 700px;
   margin: auto;
-  text-align: center;
-}
-
-.about-list {
-  list-style-type: none;
-}
-
-.about-list li {
-  margin-left: -30px;
   text-align: center;
 }
 
@@ -359,18 +357,41 @@ div.pullrightleft a:active {
   font-size: 14px;
 }
 
-.about-language {
-  display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
+.about-programming, .about-language {
+  position: relative;
+  margin-top: 10px;
 }
 
-
-.about-programming {
-  display: grid;
-  grid-template-columns: 1fr;
+table {
+  border: 1px solid black;
+  padding: 3px;
   text-align: center;
+  background-color: var(--styling-light);
+  border-collapse: collapse;
 }
+
+th {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+  background-color: var(--styling-light);
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+  background-color: var(--styling-light);
+  border-collapse: collapse;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 
 
 
