@@ -270,6 +270,7 @@ div.pullrightleft a:active {
   flex-direction: column;
   background-color: var(--tertiary-color);
   border: solid grey 1px;
+  border-radius: 5%;
 }
 
 .grid__item h2 {

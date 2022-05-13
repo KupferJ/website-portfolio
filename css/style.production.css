@@ -300,8 +300,9 @@ div.pullrightleft a:active {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: #e7e7e7;
   border: solid grey 1px;
+  border-radius: 5%;
 }
 
 .grid__item h2 {
