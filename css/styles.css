@@ -329,6 +329,23 @@ div.container-nav a {
   font-size: 2rem;
 }
 
+.project-tools {
+  color: blue;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media all and (max-width: 620px) {
+  .project-tools {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .project_container img {
   text-align: center;
   border: 1px solid blue;
