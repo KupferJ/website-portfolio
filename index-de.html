@@ -1,71 +1,389 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=11"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial scale=1">
   <title>Jorge Kupfer - Portfolio</title>
   <link rel="shortcut icon" href="img/Cat-Fav.ico">
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+  crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aleo&family=Cardo&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
+  </head>
 
 
 <body>
-<header class="page-header">
-    <a href="index-de.html"><img src="img/profile-logo.png" alt="Jorge-Kupfer-logo" class="logo"></a>    
-  <div class="container-nav pullrightleft page-header__item">
-    <a href="index-de.html" id="navigation-active">INDEX</a>
-    <a href="about-de.html">ÜBER</a>
-    <a href="work-de.html">PROJEKTE</a>
-    <a href="contact-de.html">KONTAKT</a>
-  </div>
+<header class="">
+  <nav class="navbar navbar-light bg-light font-weight-bold" style="position: fixed; z-index: 1;">
+    <a href="test.html"><img src="img/profile-logo.png" alt="Jorge-Kupfer-logo" class="logo"></a>
+    <div class="container-nav nav-items page-header__item">
+      <ul class="menu" style="list-style-type: none; padding-right: 110px;">
+        <a class="navigation-item" id="nav-contact" href="#contact">KONTAKT</a>
+        <a class="navigation-item" id="nav-work" href="#work">PROJEKTE</a>
+        <a class="navigation-item" id="nav-about" href="#about">ÜBER</a>
+        <a class="navigation-item" id="nav-index" href="#home">ANFANG</a>
+      </ul>
+      <div class="dropdown ">
+        <button class="dropbtn">Language  &#x1F310;</button>
+        <div class="dropdown-content">
+          <a href="index.html" style="font-size: 16px;">English <img src="img/uk-flag.png" width="14px" height="10px"></a>
+          <a href="index-jp.html" style="font-size: 16px;">日本語 <img src="img/jap-flag.png" width="14px" height="10px"></a>
+          <a href="index-de.html" style="font-size: 16px;">Deutsch <img src="img/ger-flag.png" width="14px" height="10px"></a>
+      </div>
+    </div> 
+  </nav>
 </header>
 
-<main class="index"><br><br>
-  <div class="profile">
-    <img src="img/profile-picture.png" class="profile__portrait animate__animated animate__fadeIn" alt="Jorge Kupfer-profile picture"> 
-    <div class="provile__text">
-      <h1>Hallo!</h1>
-      <p>
-        Mein Name ist Jorge Kupfer.<br>
-        Ich bin ein Web Developer aus Deutschland.
-      </p>
-      <a href="#">Abgeschlossene Projekte</a>
+<main class=""><br><br>
+      <div class="index-page index nav-index" id="home" style="height: 100vh; min-height: 500px; padding-top: 30px; background-color: rgb(255, 255, 255);">
+        <div class="profile">
+        <div>
+          <h2 style="margin-right: 36px;">Willkommen!<br>auf meiner Seite</h2>
+          <img style="margin-right: 36px;" class="profile-picture" src="img/profile-picture.png" alt="Jorge Kupfer-profile picture">
+          <p style="font-size: 14px; margin-right: 36px;">
+            <span style="font-size: 16px;">Bitte sehen Sie sich in Ruhe um.</span><br>
+            Bei Interesse finden Sie meine<br> Kontaktdaten am Ende der Seite.
+          </p>
+          <a style="margin-right: 36px;" href="https://github.com/KupferJ/" target="_blank">Einige meiner Projekte</a>
+          <div class="phone-menu">
+            <ul>
+              <a class="phone-item" style="padding: 5px;" id="nav-about" href="#about"><img src="img/about-icon.png" style="width: 20px;"></a>
+              <a class="phone-item" style="padding: 5px;" id="nav-work" href="#work"><img src="img/work-icon.png" style="width: 20px;"></a>
+              <a class="phone-item" style="padding: 5px;"id="nav-contact" href="#contact"><img src="img/airplane.jpg" style="width: 20px;"></a>  
+            </ul>
+          </div>
+        </div>
+      </div><br><br><br></div>
+
+      <div class="about-page nav-about" id="about" style="background-color: beige;">
+        <div><br><br><br><br>
+          <h1><b>- About -</b></h1>
+          <div class="row">
+          <div class="col-lg-4 ms-auto"></div>
+          <p class="col-lg-4 ms-auto">I once again welcome you to my portfolio page.<br><br>
+            My name is Jorge Kupfer, I am a new and ambitious Web Developer.<br>
+            Being a recent graduate with an education in modern web development, japanese studies and linguistics, 
+            I am currently seeking oportunities to enter the industry.<br>
+            If you feel like I might be a good addititon
+            to your team, please feel free to contact me. <br><br>
+            This page is meant to give a quick overview on my credentials.</p>
+            <div class="col-lg-4 ms-auto"></div>
+          </div>
+        </div><br><br>
+      
+        <div>
+          <h2>Background</h2>
+          <div class="row" style="margin-left: 50px; margin-right: 50px;">
+            <div class="col-lg-6 ms-auto">
+            <p>
+              <h4>Academic</h4>
+              I graduated from Heidelberg University in 2022 with a degree in Japanese Studies and English linguistics.
+              During my studies, I specialized in the translation of modern as well as old Japanese texts, both into English and into German.<br>    
+            </p></div>
+            <div class="col-lg-6 ms-auto">
+            <p>
+              <h4>Web Development</h4>
+              Towards the end of 2021, I started a Full-Stack Developer course at CareerFounry, from which I gratuated, 
+              and got my certificate in May 2022.<br>
+              During the duration of that course, I learned and got familiar with a variety of tools and techniques, some of which
+              I presented in the following abstract.
+            </p>
+          </div>  
+        </div><br><br>
+    
+        <div>
+          <p class="cv-download-button-description">Für genauere Informationen bezüglich meines beruflichen und akademischen Werdegangs, sehen Sie sich meinen verlinkten Lebenslauf an.</p>
+          <a href="assets/dummy.pdf"  target="_blank" download><button>CURRICULUM VITAE</button></a><br>
+        </div><br><br>
+
+
+      <div style="background-color: rgb(90, 90, 251);">
+        <section>
+          <div class="wrapper">
+            <h3 
+            style="text-align: center; padding-top: 1rem; margin-left: 2rem; font-size: 26px; color:black;">
+            My Toolset
+            </h3><br>
+            <div class="container-icons">
+              <div class="mt-3 mb-5 row">
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>HTML</p>
+                  <img class="skills-img" src="img/skills/html.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>CSS</p>
+                  <img class="skills-img" src="img/skills/css.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>JavaScript</p>
+                  <img class="skills-img" src="img/skills/java-script.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>React/ </p><br><p style="margin-top: -50px; margin-bottom: -4px;">React Native</p>
+                  <img class="skills-img" src="img/skills/react.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>Angular</p>
+                  <img class="skills-img" src="img/skills/angular.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>Node.js</p>
+                  <img class="skills-img" src="img/skills/node.svg">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>Express</p>
+                  <img class="skills-img" src="img/skills/Expressjs.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>MongoDB</p>
+                  <img class="skills-img" src="img/skills/mongoDB.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>REST APIs</p>
+                  <img class="skills-img" src="img/skills/api.png">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>Progressive Web</p><br><p style="margin-top: -50px; margin-bottom: -4px;">Applications</p>
+                  <img class="skills-img" src="img/skills/pwa.svg">
+                </div>
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>Git</p>
+                  <img class="skills-img" src="img/skills/git.png">
+                </div>  
+                <div class="icon-container col-5 col-sm-4 col-md-3 col-lg-2">
+                  <p>Bootstrap</p>
+                  <img class="skills-img" src="img/skills/bootstrap.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    <div class="work-page" id="work" style="background-color: beige;"><br><br><br><br>
+        <h1><b>- Portfolio -</b></h1>
+        <div class="project_container row" style="padding-top: 5.4em;">
+          <div class="project-img col-md-7 my-4">
+            <img src="img/movie-app.png" alt="Movie application" />
+          </div>
+          <div class="project-description col-md-5">
+            <h3 class="project-title">Movie Application (React)</h3>
+            <p style="margin-right:25px;">
+              This is the frontend of a movie list application which pulls its data from a personally created movie API.<br>
+              The movie app was designed to give users access to information about a list of movies as
+              well as some key data about them, namely their lead director, genre and a plot description.<br>
+              Users are able to sign up, log in/out, update their personal information and add movies as favorites.<br><br>
+            </p>
+            <div>
+              <h4>Tools</h4>
+              <div class="project-tools">
+                <p>「JavaScript」</p>
+                <p>「React」</p>
+                <p>「React Redux」</p>
+                <p>「React Bootstrap」</p>
+                <p>「Parcel」</p>
+              </div>
+            <div class="portfolio-btn-container row m-0">
+              <a
+                href="https://github.com/KupferJ/myFlix-client"
+                target="_blank"
+                >GITHUB REPO
+              </a>
+              <a
+                href="https://myflix-movie-project.netlify.app/"
+                target="_blank"
+                >LIVE WEBSITE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project_container reverse row" style="padding-top:4em;">
+          <div class="project-img col-md-7 my-4">
+            <img src="img/movie-app-backend.png" alt="Movie application, backend" />
+          </div>
+          <div class="project-description col-md-5">
+            <h3 class="project-title">Movie Application - Backend</h3>
+            <p style="margin-left:25px;">
+              This is the server-side component for the movie application.
+              This REST API is designed to interact with a database storing 
+              a variety of data about a list of movies. <br>
+              Users can be given the ability to create an account, access information about a number of movies and 
+              save these as favorites.
+            </p>
+            <div>
+              <h4>Tools</h4>
+              <div class="project-tools">
+                <p>「JavaScript」</p>
+                <p>「Express」</p>
+                <p>「MongoDB」</p>
+                <p>「Node.js」</p>
+              </div>
+            <div class="portfolio-btn-container row m-0">
+              <a
+                href="https://github.com/KupferJ/movie_api"
+                target="_blank"
+                >GITHUB REPO
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project_container row" style="padding-top:4em;">
+          <div class="project-img col-md-7 my-4">
+            <img src="img/movie-app-angular.png" alt="movie application" />
+          </div>
+          <div class="project-description col-md-5">
+            <h3 class="project-title">Movie Application (Angular)</h3>
+            <p style="margin-right:25px;">
+              This is the frontend of a movie list application which pulls its data from a priorly created movie API.<br>
+              The application was designed with the same key features in mind as the React version of this movie
+              application, namely to give users access to information about a list of movies as
+              well as some key data about them, namely their lead director, genre and a plot description.<br>
+              Users are able to sign up, log in/out, update their personal information and add movies as favorites.<br><br>
+            </p>
+            <div>
+              <h4>Tools</h4>
+              <div class="project-tools">
+                <p>「JavaScript」</p>
+                <p>「Angular」</p>
+                <p>「Angular Material」</p>
+              </div>
+            <div class="portfolio-btn-container row m-0">
+              <a
+                href="https://github.com/KupferJ/myFlix-Angular-client"
+                target="_blank"
+                >GITHUB REPO
+              </a>
+              <a
+                href="https://kupferj.github.io/myFlix-Angular-client/"
+                target="_blank"
+                >LIVE WEBSITE</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project_container reverse row" style="padding-top:4em;">
+          <div class="project-img col-md-7 my-4">
+            <img src="img/chat-app-screenshot-1.jpg" style="width: 18%; height: 85%; border-radius: 5%;" alt="Chat application, welcome view"/>
+            <img src="img/chat-app-screenshot-2.jpg" style="width: 18%; height: 85%; border-radius: 5%;" alt="Chat application, chat view"/>
+          </div>
+          <div class="project-description col-md-5">
+            <h3 class="project-title">Chat Application</h3>
+            <p style="margin-left:55px;">
+              This mobile Chat application was built as a progressive web application (PWA).
+              Using Firestore as its database, users can select their name and a background color to then
+              enter the chatroom to chat with other people online at the time. <br>
+              Users are given the ability to allow the application access to their mobile phones'
+              functions in order to send their current location in chat. They can also permit access
+              to their phone's library and camera to take and send a picture.
+            </p>
+            <div>
+              <h4>Tools</h4>
+              <div class="project-tools">
+                <p>「React Native」</p>
+                <p>「Expo」</p>
+                <p>「Firebase」</p>
+                <p>「Gifted Chat」</p>
+              </div>
+            <div class="portfolio-btn-container row m-0">
+              <a
+                href="https://github.com/KupferJ/chat-app"
+                target="_blank"
+                >GITHUB REPO
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project_container row" style="padding-top:4em;">
+          <div class="project-img col-md-7 my-4">
+            <img src="img/meet-app.png" alt="meet application"/>
+          </div>
+          <div class="project-description col-md-5">
+            <h3 class="project-title">Meet Application</h3>
+            <p style="margin-right:65px;">
+              This Meet application was built as a serverless, progressive web application (PWA).
+              Using the Google Calendar API, the application fetches data about a number of upcoming, 
+              coding-related events in a number of different countries.<br>
+              Users can log in using their google account to access the data, choose the number as well as 
+              the location of the events they want displayed and access a short description of them. <br><br>
+            </p>
+            <div>
+              <h4>Tools</h4>
+              <div class="project-tools">
+                <p>「React」</p>
+                <p>「PWA」</p>
+                <p>「TDD」</p>
+                <p>「Google Calendar」</p>
+              </div>
+            <div class="portfolio-btn-container row m-0">
+              <a
+                href="https://github.com/KupferJ/meet_application"
+                target="_blank"
+                >GITHUB REPO
+              </a>
+              <a
+                href="https://kupferj.github.io/meet_application/"
+                target="_blank"
+                >LIVE WEBSITE</a
+              >
+            </div>
+        </div>
     </div>
-  </div><br><br><br>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="" style="height: 86vh; min-height: 300px; background-color: rgb(255, 255, 255);">
+      <div class="contact-page contact-main" id="contact">
+          <h1>Contact</h1>
+          <p style="margin-bottom: 20px;">Für weitere Details oder bei Interesse an einer Zusammenarbeit schreiben Sie mir bitte unter der angegebenen E-Mail
+            Adresse, <br>Telefonnummer, oder kontaktieren Sie mich über mein LinkedLin Profil.</p>
+
+      <h4>Jorge Kupfer</h4>
+      <div style="margin: 20px">
+        <img class="contact-img contact-img-tel" src="img/telephone.png">
+        Telefon: +4915783456324<br>
+        <img class="contact-img" src="img/email.png">
+        Email: <a href="mailto:jorgekupfer@gmx.de">jorgekupfer@gmx.de</a>
+        <img class="email-copy-btn" onclick="copyEmail()" src="img/copy-btn.png">
+      </div>
+      <div style="padding-top: 20px"> 
+      <a href="https://linkedin.com" target="_blank" > Mein LinkedIn Account
+      </a>
+      </div><br><br>
+      </div>
+    </div>
+
+
 </main>
 
-
-<footer class="page-footer">
-  <a href="https://www.freepik.com" target="_blank" class="footer-attribution">Background Image designed by Freepik</a>
-  <div>
-      <nav class="navigation-drop">
-        <ul>
-          <li><a href="#" aria-haspopup="true">Sprache &#8657; &nbsp;</a>
-            <ul class="dropdown" aria-label="submenu">
-              <li><a href="index.html">English <img src="img/uk-flag.png" width="14px" height="10px"></a></li>
-              <li><a href="index-jp.html">日本語 <img src="img/jap-flag.png" width="14px" height="10px"></a></li>
-              <li><a href="index-de.html">Deutsch <img src="img/ger-flag.png" width="14px" height="10px"></a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>  
-    <p class="footer-findme">Media</p><br>
-    <a href="https://www.facebook.com/profile.php?id=100013842121897" target="_blank">
-      <img class="footer-img" src="img/facebook-icon.svg" alt="Facebook">
-    </a>
-    <a href="https://linkedin.com" target="_blank">
-      <img class="footer-img" src="img/linkedin-icon.svg" alt="LinkedIn">
-    </a>
-    <a href="https://github.com/KupferJ" target="_blank">
-      <img class="footer-img" src="img/github-icon.svg" alt="GitHub">
-    </a>
-  </div>  
+<footer class="bg-white page-footer">
+      <div>
+        <p class="footer-text">Find me on</p>
+        <a href="https://www.facebook.com/profile.php?id=100013842121897" target="_blank">
+          <img class="footer-img" src="img/facebook-icon.svg" alt="Facebook">
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img class="footer-img" src="img/linkedin-icon.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/KupferJ" target="_blank">
+          <img class="footer-img" src="img/github-icon.svg" alt="GitHub">
+        </a>
 </footer>
 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
