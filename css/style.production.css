@@ -351,7 +351,9 @@ div.container-nav a {
   width: 220px;
   margin: auto;
   margin-right: 45px;
-  overflow:hidden;
+  overflow: hidden;
+  border-top: .3px solid blue;
+  border-bottom: .3px solid blue;
 }
 
 
