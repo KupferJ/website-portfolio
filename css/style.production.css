@@ -346,6 +346,77 @@ div.container-nav a {
 
 
 
+/*animation with skills for phone*/
+.phone-animation{
+  width: 220px;
+  margin: auto;
+  margin-right: 45px;
+  overflow:hidden;
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.9s;
+  animation: animatezoom 0.9s
+  }
+  
+  @-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+  }
+  
+  
+  @-webkit-keyframes scroll {
+  0% {
+  transform: translateX(0);
+  }
+  100% {
+  transform: translateX(calc(-105px * 6));
+  }
+  }
+  
+  @keyframes scroll {
+  0% {
+  transform: translateX(0);
+  }
+  100% {
+  transform: translateX(calc(-105px * 6));
+  }
+  }
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  /* height: 50px; */
+  position: absolute;
+  /* width: 50px; */
+  z-index: 0;
+  }
+  .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+  }
+  .slider::before {
+  left: 0;
+  top: 0;
+  }
+  .slider .slide-track {
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(52px * 12);
+  }
+  .slider .slide {
+  height: 35px;
+  width: 60px;
+  }
+
+
 /*Projects*/
 .project_container.reverse {
   -webkit-box-orient: horizontal;
