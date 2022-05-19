@@ -449,6 +449,10 @@ div.container-nav a {
   font-size: 2rem;
 }
 
+.project-text {
+  text-align: justify;
+}
+
 .project_container img {
   text-align: center;
   border: 1px solid blue;
