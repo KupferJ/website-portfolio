@@ -260,6 +260,7 @@ div.container-nav a {
 
 .nav-items a:hover {
   color: #aa197a;
+  background-color: #e6e6e6;
 }
 
 .nav-items a:active {
@@ -423,6 +424,16 @@ div.container-nav a {
   color: #aa197a;
   font-size: 2rem;
 }
+.project-title-jp {
+  color: #aa197a;
+  font-size: 2rem;
+}
+
+@media all and (max-width: 620px) {
+  .project-title-jp {
+    font-size: 1.5rem;
+  }
+}
 
 .project-text {
   text-align: justify;
@@ -463,7 +474,7 @@ div.container-nav a {
 
 .project-img > img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   max-height: 75vh;
 }
