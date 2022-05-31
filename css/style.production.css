@@ -238,9 +238,10 @@ div.container-nav a {
   width: 100px;
   float: right;
   border: .5px solid black;
+  border-radius: 5px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 2px;
+  padding: 2.5px;
 }
 
 .navigation-item:hover {
