@@ -235,7 +235,7 @@ div.container-nav a {
   display: grid;
   grid-auto-rows: 1fr;
   text-align: center;
-  width: 100px;
+  width: 150px;
   float: right;
   border: .5px solid black;
   border-radius: 5px;
